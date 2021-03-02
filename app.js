@@ -11,7 +11,7 @@ app.use("/app-product", (req, res, next) => {
   );
 });
 
-app.use("/product", (req, res, next) => {
+app.post("/product", (req, res, next) => {
   console.log(req.body); //By default, request does not parse the incoming request body
   res.redirect("/");
 });
